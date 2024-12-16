@@ -1,0 +1,74 @@
+body{
+    margin: 10px;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    background-color: #000;
+}
+  .result{
+        width: 89%;
+        height: 50px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        background-color: #1b1a1a;
+        color: #fff;
+    }
+  .clear{
+        background-color: #c8d4d6c3;
+        border-radius: 10px;
+        border :none;
+        color: #ff0000;
+    }
+    .math{
+        background-color: #c8d4d6c3;
+        color: #02ff02;
+    }
+    .clear:hover ,.math:hover{
+        background-color: #02ff02;
+        color: #ffffff;
+        transition: 0.5s ease;
+    }
+    .equal{
+        background-color: #02ff02;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .num{
+        background-color: #232323;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+    }
+    
+.grid-buttons{
+    display: grid;
+    grid-template-columns: auto auto auto  auto auto;
+    gap: 20px;
+
+  
+}  .grid-buttons input{
+    width: 60px;
+    height: 60px;
+        border-radius: 10px;
+        border:none;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        cursor: pointer;
+        
+    }
+
+    .num:hover{
+        background-color: #fff;
+        color: #000;
+        transition: 0.5s ease;
+    }
+@media (max-width:960px) {
+
+}
+

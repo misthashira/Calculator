@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <div class="calculator">
+        <form name="calculator">
+            <div class="result-clear">
+                <!-- display -->
+                <input type="text" class="result" name="answer" readonly />
+                <!-- clear button -->
+                <!-- <input type="button" value="x" onclick="calculator.answer.value.slice"> -->
+            </div>
+            <div class="grid-buttons">
+                <input type="button" class="clear" value="C" onclick="calculator.answer.value=''">
+                <input type="button"  value=" del" onclick="calculator.answer.value=calculator.answer.value.slice(0 ,-1)  " class="math">
+                <input type="button"  value=" %" onclick="calculator.answer.value  +='%'" class="math">
+                <input type="button"  value=" &#247" onclick="calculator.answer.value  +='/'" class="math">
+
+                <br>
+                <input type="button" value="7" onclick="calculator.answer.value  +='7'" class="num">
+                <input type="button" value=" 8" onclick="calculator.answer.value  +='8'" class="num">
+                <input type="button"  value="9" onclick="calculator.answer.value  +='9'" class="num">
+                <input type="button"  value=" &#215" onclick="calculator.answer.value  +='*'" class="math">
+                <br>
+                <input type="button"  value=" 4" onclick="calculator.answer.value  +='4'" class="num">
+                <input type="button"  value=" 5" onclick="calculator.answer.value  +='5'" class="num">
+                <input type="button"  value="6" onclick="calculator.answer.value  +='6'" class="num">
+                <input type="button"  value=" +" onclick="calculator.answer.value  +='+'" class="math">
+                 <br>
+                <input type="button"  value=" 1" onclick="calculator.answer.value  +='1'" class="num">
+                <input type="button"  value=" 2" onclick="calculator.answer.value  +='2'" class="num">
+                <input type="button"  value=" 3" onclick="calculator.answer.value  +='3'" class="num">
+                <input type="button"  value=" &minus;"  onclick="calculator.answer.value  +='-'"class="math">
+                 <!-- <input type="button" value="00" onclick="calculator.answer.value +='00'">
+                 <input type="button" value="000" onclick="calculator.answer.value+='000'">
+                 <input type="button" value="0000" onclick="calculator.answer.value +='0000'">
+                 <input type="button" value="00000" onclick="calculator.answer.value +='00000'"> -->
+                 <br>
+                 <input type="button"  value=" ." onclick="calculator.answer.value  +='.'" class="num">
+                 <input type="button"  value=" 0" onclick="calculator.answer.value  +='0'" class="num">
+                 <input type="button"  value=" 00" onclick="calculator.answer.value  +='00'" class="num"class="num">
+                 <input type="button"  value=" =" onclick="calculator.answer.value  =eval(calculator.answer.value)" class="equal">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
